@@ -19,3 +19,4 @@ SerializationProtobuf.serializationThroughput  thrpt    7  4133271,271 ± 341441
 SerializationProtobuf.serializationAvgTime      avgt    7       ≈ 10⁻⁶                s/op
 
 Побробнее в папке results
+Вывод: grpc быстрее в десериализации а rest  в сериализации
