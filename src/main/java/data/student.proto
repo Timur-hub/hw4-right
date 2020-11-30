@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+
+option java_package = "dto";
+option java_outer_classname = "StudentProtoDTO";
+
+message StudentDTO {
+  required string age = 1;
+  required string name = 2;
+  required string surname = 3;
+  repeated string id = 4;
+}
