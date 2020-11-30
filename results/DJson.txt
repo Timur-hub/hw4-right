@@ -1,0 +1,71 @@
+# JMH 1.12 (released 1704 days ago, please consider updating!)
+# VM version: JDK 13.0.2, VM 13.0.2+8
+# VM invoker: C:\Program Files\Java\jdk-13.0.2\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\lib\idea_rt.jar=55434:C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 7 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: json.DeserializationJSON.deserializationThroughput
+
+# Run progress: 0,00% complete, ETA 00:00:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 5837537,813 ops/s
+# Warmup Iteration   2: 7258586,710 ops/s
+# Warmup Iteration   3: 7980455,266 ops/s
+# Warmup Iteration   4: 6802736,685 ops/s
+# Warmup Iteration   5: 7871574,593 ops/s
+Iteration   1: 8195335,306 ops/s
+Iteration   2: 7003252,376 ops/s
+Iteration   3: 6930407,448 ops/s
+Iteration   4: 7610140,092 ops/s
+Iteration   5: 8019395,148 ops/s
+Iteration   6: 8188489,456 ops/s
+Iteration   7: 8226684,004 ops/s
+
+
+Result "deserializationThroughput":
+  7739100,547 ±(99.9%) 1280168,829 ops/s [Average]
+  (min, avg, max) = (6930407,448, 7739100,547, 8226684,004), stdev = 568402,894
+  CI (99.9%): [6458931,718, 9019269,376] (assumes normal distribution)
+
+
+# JMH 1.12 (released 1704 days ago, please consider updating!)
+# VM version: JDK 13.0.2, VM 13.0.2+8
+# VM invoker: C:\Program Files\Java\jdk-13.0.2\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\lib\idea_rt.jar=55434:C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 7 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: json.DeserializationJSON.deserializationAvgTime
+
+# Run progress: 50,00% complete, ETA 00:00:13
+# Fork: 1 of 1
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   6: ≈ 10⁻⁶ s/op
+Iteration   7: ≈ 10⁻⁶ s/op
+
+
+Result "deserializationAvgTime":
+  ≈ 10⁻⁶ s/op
+
+
+# Run complete. Total time: 00:00:27
+
+Benchmark                                       Mode  Cnt        Score         Error  Units
+DeserializationJSON.deserializationThroughput  thrpt    7  7739100,547 ± 1280168,829  ops/s
+DeserializationJSON.deserializationAvgTime      avgt    7       ≈ 10⁻⁶                 s/op
+
+Process finished with exit code 0

@@ -1,0 +1,69 @@
+# JMH 1.12 (released 1704 days ago, please consider updating!)
+# VM version: JDK 13.0.2, VM 13.0.2+8
+# VM invoker: C:\Program Files\Java\jdk-13.0.2\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\lib\idea_rt.jar=55491:C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 7 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: protobuf.SerializationProtobuf.serializationThroughput
+
+# Run progress: 0,00% complete, ETA 00:00:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 2093596,982 ops/s
+# Warmup Iteration   2: 4131591,776 ops/s
+# Warmup Iteration   3: 4126152,582 ops/s
+# Warmup Iteration   4: 3826268,888 ops/s
+# Warmup Iteration   5: 4187791,490 ops/s
+Iteration   1: 4206457,233 ops/s
+Iteration   2: 3801985,139 ops/s
+Iteration   3: 4163719,859 ops/s
+Iteration   4: 4184457,204 ops/s
+Iteration   5: 4174382,853 ops/s
+Iteration   6: 4265735,117 ops/s
+Iteration   7: 4136161,493 ops/s
+
+
+Result "serializationThroughput":
+  4133271,271 ±(99.9%) 341441,168 ops/s [Average]
+  (min, avg, max) = (3801985,139, 4133271,271, 4265735,117), stdev = 151601,994
+  CI (99.9%): [3791830,103, 4474712,439] (assumes normal distribution)
+
+
+# JMH 1.12 (released 1704 days ago, please consider updating!)
+# VM version: JDK 13.0.2, VM 13.0.2+8
+# VM invoker: C:\Program Files\Java\jdk-13.0.2\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\lib\idea_rt.jar=55491:C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 7 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: protobuf.SerializationProtobuf.serializationAvgTime
+
+# Run progress: 50,00% complete, ETA 00:00:13
+# Fork: 1 of 1
+# Warmup Iteration   1: ≈ 10⁻⁶ s/op
+# Warmup Iteration   2: ≈ 10⁻⁶ s/op
+# Warmup Iteration   3: ≈ 10⁻⁶ s/op
+# Warmup Iteration   4: ≈ 10⁻⁶ s/op
+# Warmup Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   1: ≈ 10⁻⁶ s/op
+Iteration   2: ≈ 10⁻⁶ s/op
+Iteration   3: ≈ 10⁻⁶ s/op
+Iteration   4: ≈ 10⁻⁶ s/op
+Iteration   5: ≈ 10⁻⁶ s/op
+Iteration   6: ≈ 10⁻⁶ s/op
+Iteration   7: ≈ 10⁻⁶ s/op
+
+
+Result "serializationAvgTime":
+  ≈ 10⁻⁶ s/op
+
+
+# Run complete. Total time: 00:00:26
+
+Benchmark                                       Mode  Cnt        Score        Error  Units
+SerializationProtobuf.serializationThroughput  thrpt    7  4133271,271 ± 341441,168  ops/s
+SerializationProtobuf.serializationAvgTime      avgt    7       ≈ 10⁻⁶                s/op
